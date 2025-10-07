@@ -1,0 +1,10 @@
+^D:\OTUS_HOME\OTUS_HOMEWORK4\BUILD\CMAKEFILES\779A936163EC47B5572F20A2594C8475\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SD:/otus_home/otus_homework4 -BD:/otus_home/otus_homework4/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/otus_home/otus_homework4/build/print_ip.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
