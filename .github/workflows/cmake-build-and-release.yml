@@ -52,15 +52,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Configure
-        run: cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
-      - name: Build
-        run: cmake --build build --config Release --parallel
+      - name: Download Linux artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: print_ip_demo-Linux
+          path: dist/linux
+
+      - name: Download Windows artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: print_ip_demo-Windows
+          path: dist/windows
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            build/print_ip_demo
+            dist/linux/build/print_ip_demo
+            dist/windows/build/Release/print_ip_demo.exe
           generate_release_notes: true
 
   docs:
