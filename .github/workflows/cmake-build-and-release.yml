@@ -33,14 +33,28 @@ jobs:
         if: runner.os == 'Windows'
         run: build/Release/print_ip_demo.exe
 
+      - name: Package artifact
+        shell: bash
+        run: |
+          set -eux
+          mkdir -p pack
+          if [[ "${{ runner.os }}" == "Windows" ]]; then
+            cp "build/Release/print_ip_demo.exe" "pack/print_ip_demo-windows-amd64.exe"
+          elif [[ "${{ runner.os }}" == "macOS" ]]; then
+            cp "build/print_ip_demo" "pack/print_ip_demo-macos-amd64"
+            chmod +x pack/print_ip_demo-macos-amd64
+          else
+            cp "build/print_ip_demo" "pack/print_ip_demo-linux-amd64"
+            chmod +x pack/print_ip_demo-linux-amd64
+          fi
+          ls -l pack
+
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: print_ip_demo-${{ runner.os }}
-          path: |
-            build/print_ip_demo
-            build/Release/print_ip_demo.exe
-          if-no-files-found: ignore
+          path: pack/*
+          if-no-files-found: error
 
   release:
     name: Release
@@ -52,24 +66,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Download Linux artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: print_ip_demo-Linux
-          path: dist/linux
 
-      - name: Download Windows artifact
+      - name: Download all artifacts
         uses: actions/download-artifact@v4
         with:
-          name: print_ip_demo-Windows
-          path: dist/windows
+          pattern: print_ip_demo-*
+          merge-multiple: true
+          path: dist
+
+      - name: List downloaded files
+        run: ls -R dist
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          files: |
-            dist/linux/build/print_ip_demo
-            dist/windows/build/Release/print_ip_demo.exe
+          files: dist/*
           generate_release_notes: true
 
   docs:
