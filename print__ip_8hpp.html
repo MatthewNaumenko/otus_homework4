@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>print_ip: Файл include/print_ip.hpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">print_ip
+   </div>
+   <div id="projectbrief">SFINAE-based print_ip + docs</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Классы</a> &#124;
+<a href="#namespaces">Пространства имен</a> &#124;
+<a href="#func-members">Функции</a> &#124;
+<a href="#var-members">Переменные</a>  </div>
+  <div class="headertitle"><div class="title">Файл print_ip.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Перегруженные шаблонные функции print_ip с SFINAE.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;type_traits&gt;</code><br />
+<code>#include &lt;cstdint&gt;</code><br />
+<code>#include &lt;tuple&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;list&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;utility&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для print_ip.hpp:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="print__ip_8hpp__incl.svg" width="700" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="print__ip_8hpp__dep__incl.svg" width="162" height="110"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+</div>
+<p><a href="print__ip_8hpp_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Классы</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__vector.html">is_vector&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__vector_3_01std_1_1vector_3_01Args_8_8_8_01_4_01_4.html">is_vector&lt; std::vector&lt; Args... &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__list.html">is_list&lt; T &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structis__list_3_01std_1_1list_3_01Args_8_8_8_01_4_01_4.html">is_list&lt; std::list&lt; Args... &gt; &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structare__same.html">are_same&lt;... &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structare__same_3_01T_00_01U_00_01R_8_8_8_01_4.html">are_same&lt; T, U, R... &gt;</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+Пространства имен</h2></td></tr>
+<tr class="memitem:namespacedetail" id="r_namespacedetail"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacedetail.html">detail</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a14dc353cc0cd9f2442a94965c20a8cdf" id="r_a14dc353cc0cd9f2442a94965c20a8cdf"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">class</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a> , <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::enable_if_t</a>&lt; <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::is_integral_v</a>&lt; <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a> &gt; &amp;&amp;!<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::is_same_v</a>&lt; <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a>, <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">bool</a> &gt;, <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">int</a> &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a14dc353cc0cd9f2442a94965c20a8cdf"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a14dc353cc0cd9f2442a94965c20a8cdf">print_ip</a> (<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">value</a>)</td></tr>
+<tr class="memdesc:a14dc353cc0cd9f2442a94965c20a8cdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Печать "IP" для любого целочисленного типа (кроме bool). Вывод по байтам, беззнаково, со старшего к младшему, через '.'.  <br /></td></tr>
+<tr class="separator:a14dc353cc0cd9f2442a94965c20a8cdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36e78056c4e4c8b7fd4fe6e3a69b2633" id="r_a36e78056c4e4c8b7fd4fe6e3a69b2633"><td class="memItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">void</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a36e78056c4e4c8b7fd4fe6e3a69b2633">print_ip</a> (<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">const</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::string</a> &amp;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">s</a>)</td></tr>
+<tr class="memdesc:a36e78056c4e4c8b7fd4fe6e3a69b2633"><td class="mdescLeft">&#160;</td><td class="mdescRight">Строка печатается как есть.  <br /></td></tr>
+<tr class="separator:a36e78056c4e4c8b7fd4fe6e3a69b2633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6337b52b7fdb2013f1d8c7e795ff340" id="r_ae6337b52b7fdb2013f1d8c7e795ff340"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">class</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">C</a> , <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::enable_if_t</a>&lt; <a class="el" href="print__ip_8hpp.html#a4fbf025a5168661ab4054b8acf9221e9">is_vector_v</a>&lt; <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">C</a> &gt;||<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">is_list_v</a>&lt; <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">C</a> &gt;, <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">int</a> &gt;  = 0&gt; </td></tr>
+<tr class="memitem:ae6337b52b7fdb2013f1d8c7e795ff340"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#ae6337b52b7fdb2013f1d8c7e795ff340">print_ip</a> (<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">const</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">C</a> &amp;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">cont</a>)</td></tr>
+<tr class="memdesc:ae6337b52b7fdb2013f1d8c7e795ff340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Печать содержимого std::vector или std::list через '.'. Элементы выводятся как есть.  <br /></td></tr>
+<tr class="separator:ae6337b52b7fdb2013f1d8c7e795ff340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0416d7a2b32732825da7a461e2fc563d" id="r_a0416d7a2b32732825da7a461e2fc563d"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">class</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">Tuple</a> , std::size_t... I&gt; </td></tr>
+<tr class="memitem:a0416d7a2b32732825da7a461e2fc563d"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespacedetail.html#a0416d7a2b32732825da7a461e2fc563d">detail::print_tuple_impl</a> (<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">const</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">Tuple</a> &amp;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">t</a>, std::index_sequence&lt; I... &gt;)</td></tr>
+<tr class="separator:a0416d7a2b32732825da7a461e2fc563d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52530c8ee99c232a1f5a84ca484bfec1" id="r_a52530c8ee99c232a1f5a84ca484bfec1"><td class="memTemplParams" colspan="2">template&lt;class... Ts, <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::enable_if_t</a>&lt;(sizeof...(<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">Ts</a>) &gt; 0) &amp;&amp;<a class="el" href="print__ip_8hpp.html#a909482f27fc76496680338b82a581648">are_same_v</a>&lt; Ts... &gt;, <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">int</a> &gt;  = 0&gt; </td></tr>
+<tr class="memitem:a52530c8ee99c232a1f5a84ca484bfec1"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">void</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a52530c8ee99c232a1f5a84ca484bfec1">print_ip</a> (<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">const</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::tuple</a>&lt; Ts... &gt; &amp;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">t</a>)</td></tr>
+<tr class="memdesc:a52530c8ee99c232a1f5a84ca484bfec1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Разрешённая перегрузка для std::tuple, если все типы равны.  <br /></td></tr>
+<tr class="separator:a52530c8ee99c232a1f5a84ca484bfec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Переменные</h2></td></tr>
+<tr class="memitem:a4fbf025a5168661ab4054b8acf9221e9" id="r_a4fbf025a5168661ab4054b8acf9221e9"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">class</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a> &gt; </td></tr>
+<tr class="memitem:a4fbf025a5168661ab4054b8acf9221e9"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">constexpr</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a4fbf025a5168661ab4054b8acf9221e9">is_vector_v</a> = <a class="el" href="structis__vector.html">is_vector</a>&lt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::decay_t</a>&lt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a>&gt;&gt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">::value</a></td></tr>
+<tr class="separator:a4fbf025a5168661ab4054b8acf9221e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba616383699ab0a96098de59a81b9c89" id="r_aba616383699ab0a96098de59a81b9c89"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
+<tr class="memitem:aba616383699ab0a96098de59a81b9c89"><td class="memTemplItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">is_list_v</a> = <a class="el" href="structis__list.html">is_list</a>&lt;std::decay_t&lt;T&gt;&gt;::value</td></tr>
+<tr class="separator:aba616383699ab0a96098de59a81b9c89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a909482f27fc76496680338b82a581648" id="r_a909482f27fc76496680338b82a581648"><td class="memTemplParams" colspan="2">template&lt;class... Ts&gt; </td></tr>
+<tr class="memitem:a909482f27fc76496680338b82a581648"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">constexpr</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">bool</a>&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="print__ip_8hpp.html#a909482f27fc76496680338b82a581648">are_same_v</a> = <a class="el" href="structare__same.html">are_same</a>&lt;Ts...&gt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">::value</a></td></tr>
+<tr class="separator:a909482f27fc76496680338b82a581648"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Перегруженные шаблонные функции print_ip с SFINAE. </p>
+<p>Варианты: 1) Целочисленные типы — печать по байтам (MSB-LSB) в беззнаковом виде. 2) Строка — печатается как есть. 3) Контейнеры std::vector / std::list — элементы через '.'. 4) (Опционально) std::tuple, если все типы одинаковы — элементы через '.'. </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="ae6337b52b7fdb2013f1d8c7e795ff340" name="ae6337b52b7fdb2013f1d8c7e795ff340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6337b52b7fdb2013f1d8c7e795ff340">&#9670;&#160;</a></span>print_ip() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">class</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">C</a> , <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::enable_if_t</a>&lt; <a class="el" href="print__ip_8hpp.html#a4fbf025a5168661ab4054b8acf9221e9">is_vector_v</a>&lt; <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">C</a> &gt;||<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">is_list_v</a>&lt; <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">C</a> &gt;, <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">int</a> &gt;  = 0&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">void</a> print_ip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">const</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">C</a> &amp;&#160;</td>
+          <td class="paramname"><em>cont</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Печать содержимого std::vector или std::list через '.'. Элементы выводятся как есть. </p>
+
+</div>
+</div>
+<a id="a36e78056c4e4c8b7fd4fe6e3a69b2633" name="a36e78056c4e4c8b7fd4fe6e3a69b2633"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36e78056c4e4c8b7fd4fe6e3a69b2633">&#9670;&#160;</a></span>print_ip() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">void</a> print_ip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">const</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::string</a> &amp;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Строка печатается как есть. </p>
+
+</div>
+</div>
+<a id="a52530c8ee99c232a1f5a84ca484bfec1" name="a52530c8ee99c232a1f5a84ca484bfec1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52530c8ee99c232a1f5a84ca484bfec1">&#9670;&#160;</a></span>print_ip() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... Ts, <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::enable_if_t</a>&lt;(sizeof...(<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">Ts</a>) &gt; 0) &amp;&amp;<a class="el" href="print__ip_8hpp.html#a909482f27fc76496680338b82a581648">are_same_v</a>&lt; Ts... &gt;, <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">int</a> &gt;  = 0&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">void</a> print_ip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">const</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::tuple</a>&lt; Ts... &gt; &amp;&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">delete</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Разрешённая перегрузка для std::tuple, если все типы равны. </p>
+<p>Запрещённая перегрузка: гетерогенный tuple - ошибка компиляции. </p>
+
+</div>
+</div>
+<a id="a14dc353cc0cd9f2442a94965c20a8cdf" name="a14dc353cc0cd9f2442a94965c20a8cdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14dc353cc0cd9f2442a94965c20a8cdf">&#9670;&#160;</a></span>print_ip() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">class</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a> , <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::enable_if_t</a>&lt; <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::is_integral_v</a>&lt; <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a> &gt; &amp;&amp;!<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::is_same_v</a>&lt; <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a>, <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">bool</a> &gt;, <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">int</a> &gt;  = 0&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">void</a> print_ip </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a>&#160;</td>
+          <td class="paramname"><em>value</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Печать "IP" для любого целочисленного типа (кроме bool). Вывод по байтам, беззнаково, со старшего к младшему, через '.'. </p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">T</td><td>целочисленный тип </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">value</td><td>значение <div class="fragment"><div class="line"><a class="code hl_function" href="print__ip_8hpp.html#a14dc353cc0cd9f2442a94965c20a8cdf">print_ip</a>(<a class="code hl_variable" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">int32_t</a>{0x7F000001}); <span class="comment">// 127.0.0.1</span></div>
+<div class="ttc" id="aprint__ip_8hpp_html_a14dc353cc0cd9f2442a94965c20a8cdf"><div class="ttname"><a href="print__ip_8hpp.html#a14dc353cc0cd9f2442a94965c20a8cdf">print_ip</a></div><div class="ttdeci">void print_ip(T value)</div><div class="ttdoc">Печать &quot;IP&quot; для любого целочисленного типа (кроме bool). Вывод по байтам, беззнаково,...</div><div class="ttdef"><b>Definition</b> print_ip.hpp:49</div></div>
+<div class="ttc" id="aprint__ip_8hpp_html_aba616383699ab0a96098de59a81b9c89"><div class="ttname"><a href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">is_list_v</a></div><div class="ttdeci">constexpr bool is_list_v</div><div class="ttdef"><b>Definition</b> print_ip.hpp:28</div></div>
+</div><!-- fragment --> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Переменные</h2>
+<a id="a909482f27fc76496680338b82a581648" name="a909482f27fc76496680338b82a581648"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a909482f27fc76496680338b82a581648">&#9670;&#160;</a></span>are_same_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class... Ts&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">constexpr</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">bool</a> are_same_v = <a class="el" href="structare__same.html">are_same</a>&lt;Ts...&gt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">::value</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba616383699ab0a96098de59a81b9c89" name="aba616383699ab0a96098de59a81b9c89"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba616383699ab0a96098de59a81b9c89">&#9670;&#160;</a></span>is_list_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class T &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool is_list_v = <a class="el" href="structis__list.html">is_list</a>&lt;std::decay_t&lt;T&gt;&gt;::value</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4fbf025a5168661ab4054b8acf9221e9" name="a4fbf025a5168661ab4054b8acf9221e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4fbf025a5168661ab4054b8acf9221e9">&#9670;&#160;</a></span>is_vector_v</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">class</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">constexpr</a> <a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">bool</a> is_vector_v = <a class="el" href="structis__vector.html">is_vector</a>&lt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">std::decay_t</a>&lt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">T</a>&gt;&gt;<a class="el" href="print__ip_8hpp.html#aba616383699ab0a96098de59a81b9c89">::value</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
